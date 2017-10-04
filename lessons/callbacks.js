@@ -1,6 +1,7 @@
+// Authored by dori 
+
 
 var grades = [91, 85, 92, 88, 100, 99]
-
 
 function sort (array) {
     return array.sort(function (a, b) { 
