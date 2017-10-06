@@ -12,41 +12,41 @@ and the completed value false. Add the new task object to the list and log all t
 
 
 
-// var readline = require('readline')
+var readline = require('readline')
 
 
-// var rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
 
 
-// function clear () {
-//   process.stdout.write('\u001B[2J\u001B[0;0f')
-// }
+function clear () {
+  process.stdout.write('\u001B[2J\u001B[0;0f')
+}
 
 
-// function createTask(description){
-//     var task = { 
-//         description: description,
-//         completed: false
-//     }
-//     return task
-// }
+function createTask(description){
+    var task = { 
+        description: description,
+        completed: false
+    }
+    return task
+}
 
 
 
-// var tasks = []
+var tasks = []
 
-// rl.on('line', function(input) {
-//     var array = input.split(' ')
-//     var newArray = array.slice(1)
-//     var string = newArray.join(' ')
-//     if (array[0].toUpperCase() === 'ADD')
-//         console.log(createTask(string))
-//     })
+rl.on('line', function(input) {
+    var array = input.split(' ')
+    var newArray = array.slice(1)
+    var string = newArray.join(' ')
+    if (array[0].toUpperCase() === 'ADD')
+        console.log(createTask(string))
+    })
 
-// console.log("Add a task")
+console.log("Add a task")
 
 
 
@@ -71,42 +71,42 @@ If the first word is not `ADD`, the program will ignore the input or display an 
 
 */
 
-// var readline = require('readline')
+var readline = require('readline')
 
 
-// var rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
 
 
-// function clear () {
-//   process.stdout.write('\u001B[2J\u001B[0;0f')
-// }
+function clear () {
+  process.stdout.write('\u001B[2J\u001B[0;0f')
+}
 
 
-// function createTask(description){
-//     var task = { 
-//         description: description,
-//         completed: false
-//     }
-//     return task
-// }
+function createTask(description){
+    var task = { 
+        description: description,
+        completed: false
+    }
+    return task
+}
 
 
 
-// var tasks = []
+var tasks = []
 
-// rl.on('line', function(input) {
-//     var array = input.split(' ')
-//     var newArray = array.slice(1)
-//     var string = newArray.join(' ')
-//     if (array[0].toUpperCase() === 'ADD')
-//         tasks.push(createTask(string))
-//         console.log(tasks)
-//     })
+rl.on('line', function(input) {
+    var array = input.split(' ')
+    var newArray = array.slice(1)
+    var string = newArray.join(' ')
+    if (array[0].toUpperCase() === 'ADD')
+        tasks.push(createTask(string))
+        console.log(tasks)
+    })
 
-// console.log("Add a task")
+console.log("Add a task")
 
 
 /*  Level 3
@@ -121,44 +121,6 @@ The id will be equal to the index position of the task in the array.
 */ 
 
 
-// var readline = require('readline')
-
-
-// var rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
-
-//var options = 'all, active, completed, toggle';
-
-// function clear () {
-//   process.stdout.write('\u001B[2J\u001B[0;0f')
-// }
-
-
-// function createTask(description){
-//     var task = { 
-//         description: description,
-//         completed: false
-//     }
-//     return task
-// }
-
-
-
-// var tasks = []
-
-// rl.on('line', function(input) {
-//     var array = input.split(' ')
-//     var newArray = array.slice(1)
-//     var string = newArray.join(' ')
-//     if (array[0].toUpperCase() === 'ADD')
-//         tasks.push(createTask(string))
-//         console.log(tasks)
-//     })
-//     if 
-
-// console.log("Add a task")
 
 
 var readline = require('readline')
@@ -277,72 +239,72 @@ with completed property set to true.
 
 
 
-// var readline = require('readline')
+var readline = require('readline')
 
-// var options = 'all, active, completed';
-
-
-// var rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
+var options = 'all, active, completed';
 
 
-// function clear () {
-//   process.stdout.write('\u001B[2J\u001B[0;0f')
-// }
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
 
 
-// function createTask(description1, completed1){
-//     var task = { 
-//         description: description1,
-//         completed: completed1
-//     }
-//     return task
-// }
+function clear () {
+  process.stdout.write('\u001B[2J\u001B[0;0f')
+}
 
 
-// function tasksNotCompleted(tasks){
-//     for (var i = 0; i < tasks.length; i ++){
-//         if (tasks[i].completed === "false") {
-//       console.log((i + 1) + '. ' + tasks[i].description + '. Active: ' + tasks[i].completed)
-//     }
-//   }
-// }
+function createTask(description1, completed1){
+    var task = { 
+        description: description1,
+        completed: completed1
+    }
+    return task
+}
 
-// function tasksCompleted(tasks){
-//     for (var i = 0; i < tasks.length; i ++){
-//         if (tasks[i].completed === "true") {
-//       console.log((i + 1)  + '. ' + tasks[i].description + '. Completed: ' + tasks[i].completed)
-//     }
-//   }
-// }
 
-// var tasks = []
+function tasksNotCompleted(tasks){
+    for (var i = 0; i < tasks.length; i ++){
+        if (tasks[i].completed === "false") {
+      console.log((i + 1) + '. ' + tasks[i].description + '. Active: ' + tasks[i].completed)
+    }
+  }
+}
 
-// rl.on('line', function(input) {
-//     var array = input.split(' ')
-//     //console.log(array)all
-//     var description = array.slice(1, array.length-1);
-//    // console.log(description)
-//     var completed = array[array.length-1];
-//     var description1 = description.join(' ')
+function tasksCompleted(tasks){
+    for (var i = 0; i < tasks.length; i ++){
+        if (tasks[i].completed === "true") {
+      console.log((i + 1)  + '. ' + tasks[i].description + '. Completed: ' + tasks[i].completed)
+    }
+  }
+}
+
+var tasks = []
+
+rl.on('line', function(input) {
+    var array = input.split(' ')
+    //console.log(array)all
+    var description = array.slice(1, array.length-1);
+   // console.log(description)
+    var completed = array[array.length-1];
+    var description1 = description.join(' ')
     
     
 
-//     if (array[0].toUpperCase() === 'ADD')
-//         tasks.push(createTask(description1, completed ))
+    if (array[0].toUpperCase() === 'ADD')
+        tasks.push(createTask(description1, completed ))
     
-//     if (input === "all"){ 
-//         console.log(tasks)
-//     }
-//     if (input === "active"){
-//         tasksNotCompleted(tasks)
-//     }
-//     if (input === "completed")
-//     tasksCompleted(tasks)
-// }) 
-// console.log( 'please add a task and if it was completed')
+    if (input === "all"){ 
+        console.log(tasks)
+    }
+    if (input === "active"){
+        tasksNotCompleted(tasks)
+    }
+    if (input === "completed")
+    tasksCompleted(tasks)
+}) 
+console.log( 'please add a task and if it was completed')
 
 
-// console.log('Please choose one of[' + options+ ']$')
+console.log('Please choose one of[' + options+ ']$')
