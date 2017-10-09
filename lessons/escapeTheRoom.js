@@ -343,11 +343,11 @@ rl.on('line', function (input) {
 
 // Create an array of RoomObject objects
 var objects = [
- new RoomObject  ('door', "This door is locked! I need to find the key", [], ['key'],['open', 'inspect']), 
+ new RoomObject  ('Door', "This door is locked! I need to find the key", [], ['key'],['open', 'inspect']), 
 new RoomObject('Wardrobe', 'This wardrobe is locked with a code!',['key'],['code'],['open', 'inspect']),
-new RoomObject  ('computer', 'I need to find the computer password, maybe it has the code to the wardobe in its archives!', ['code'], ['password'],['turn on', 'inspect']), 
-new RoomObject ('desk', 'this desk has so many papers on it, maybe the computer password is written on one of these!', [], ['papers'], [, 'inspect']),
-new RoomObject( 'papers', 'the computer password has to be on these papers!', ['password'], [], ('inspect'))
+new RoomObject  ('Computer', 'I need to find the computer password, maybe it has the code to the wardobe in its archives!', ['code'], ['password'],['turn on', 'inspect']), 
+new RoomObject ('Desk', 'this desk has so many papers on it, maybe the computer password is written on one of these!', [], ['papers'], [, 'inspect']),
+new RoomObject( 'Papers', 'the computer password has to be on these papers!', ['password'], [], ('inspect'))
  ]
 
 
@@ -363,7 +363,7 @@ var bedroom = [
 ]
 
 // Create a new Game
-var game = new Game (bedroom)
+var game = new Game(bedroom)
 
 // Create a new Player
 var player = new Player(game.getCurrentRoom())
