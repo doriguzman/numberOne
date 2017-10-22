@@ -51,14 +51,14 @@ body, html {
 .right { float: right; }
 .left { float:left; }
 
+
+
+
+
 #divider1 { 
     height: 290px; 
     width: 10px;
 }
-
-
-
-
 
 #divider2 {
     height: 10px;
@@ -100,5 +100,5 @@ body, html {
 }
 
 .divider {
-    background-color: grey;
+    background-color: fff4db;
 }
