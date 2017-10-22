@@ -1,0 +1,24 @@
+html {
+    font-family: sans-serif;
+  }
+ /* Your CSS below here */
+  p{
+      width: 300px;
+      line-height:50px;
+      text-align: center;
+      text-shadow: .75px .4px 2px black;
+      font-size: 1.0625rem; /*i used 17 px to rem; using a base of 16*/
+      color:rgb(255, 0, 0);
+      background-color: rgb(255, 0, 0);
+      border: 1px solid rgb(121, 1, 1);
+      border-radius: 9px;
+      box-shadow: 2px 1px 10px black, 
+      inset 1px 1px 1px rgba(255, 255, 255, 0.441),
+      inset -2px -2px 1px rgba(0, 0, 0, 0.447);
+      background-image:linear-gradient(to top left, rgba(0, 0, 0, 0.2)30%, rgb(250, 0, 0));
+
+  }
+  
+ 
+
+
