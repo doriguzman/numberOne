@@ -1,0 +1,19 @@
+body{
+    font-size:24px;
+    text-align: center;
+}
+
+
+
+@media (max-width:960px){
+    body{
+        width:30em;
+    }
+}
+
+@media(min-width:961px){
+    body{
+        width:40em;
+    }
+}
+/* So do we have to come up with two rules in case the other doesnt apply*/
