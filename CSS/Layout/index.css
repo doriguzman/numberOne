@@ -1,0 +1,61 @@
+
+#navigation {
+    padding:15px; 
+    margin-left:-55px; 
+    
+    }
+    #navigation ul {
+       /* float:left; */
+       margin: 0 0 -10px 0px;
+    }
+        
+
+        
+    #navigation li {
+        display: inline;
+        border: 1 px solid rgb(201, 197, 197);
+        background-color: rgb(201, 197, 197);
+        margin-right:5px;
+        padding:5px
+        
+        
+    }
+        
+    #case {
+
+        background-color: rgb(233, 233, 233);
+        width:425px;
+        padding:10px 0px 20px 5px;
+      
+    }
+
+
+   
+        
+    #footer {
+        background-color: rgb(201, 197, 197);
+        width:430px;
+        margin-top:-20px;
+        padding-top: 10px;
+        float:left;
+
+        
+    }
+        
+    #footer ul {
+        margin: auto;
+        padding-left:0px;
+        padding-bottom: 10px
+
+    }
+        
+    #footer  li {
+        display: inline;
+        margin:auto;
+        
+    
+    }
+
+   #email{
+       margin-top:0px
+   }
